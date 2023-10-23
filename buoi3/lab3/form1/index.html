@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM ONE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+   
+        <div id="form">
+            <div class="wrapper">
+                <div class="form_content">
+                    <h2 style="display: flex;justify-content: center;margin-bottom: 5px;">Contact Us</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">FULL NAME*</label>
+                            <input type="text" id="username" name="username" placeholder="Enter Your Name" required>
+                            <span id="emptyName"></span> <br>
+                            <span id="errorName"></span>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col1" style="margin-right: 50px;">
+                                    <label for="email">EMAIL*</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                                    <span id="emptyEmail"></span> <br>
+                                    <span id="errorEmail"></span>
+                                </div>
+                                <div class="col2">
+                                    <label for="phone">Phone*</label>
+                                    <input type="text" id="phone" name="phone" placeholder="Enter Number Phone" required>
+                                    <span id="emptyPhone"></span> <br>
+                                    <span id="errorPhone"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">NEEDED SERVICES*</label>
+                            <input type="number" id="username" name="username" placeholder="Please chooses" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="text-area-wrapper">
+                                <textarea id="message" name="message" rows="10" required oninput="handleTextareaInput()"
+                                    style="width: 104%;"></textarea>
+                                <div class="label_area">MESSAGE</div>
+                                <div class="placeholder">Your message here</div>
+                            </div>
+                        </div>
+                        <button type="submit" id="submitForm">Submit <i class="fa-solid fa-arrow-right" style="color: #ffffff;margin-left: 4px;" ></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+   
+   <script src="app.js"></script>
+</body>
+
+</html>
